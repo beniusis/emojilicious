@@ -12,11 +12,6 @@ export default function useSearchEmoji(value) {
     setError(false);
     setFoundAny(false);
 
-    if (value === '') {
-      setLoading(false);
-      return;
-    }
-
     const controller = new AbortController();
 
     axios({
@@ -33,7 +28,6 @@ export default function useSearchEmoji(value) {
       })
       .catch(() => {
         setError(true);
-        setLoading(false);
       });
 
     return () => controller.abort();
