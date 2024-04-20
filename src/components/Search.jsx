@@ -16,7 +16,7 @@ export default function Search({ value, setValue }) {
       />
 
       <span
-        className="pointer-events-none absolute inset-y-0 end-0 grid w-10 place-content-center text-gray-600"
+        className="absolute inset-y-0 grid w-10 text-gray-600 pointer-events-none end-0 place-content-center"
         aria-hidden
       >
         <svg
@@ -24,7 +24,7 @@ export default function Search({ value, setValue }) {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="h-4 w-4"
+          className="w-4 h-4"
         >
           <path
             strokeLinecap="round"
