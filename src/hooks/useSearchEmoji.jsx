@@ -33,6 +33,7 @@ export default function useSearchEmoji(value) {
       })
       .catch(() => {
         setError(true);
+        setLoading(false);
       });
 
     return () => controller.abort();
