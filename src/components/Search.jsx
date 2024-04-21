@@ -11,7 +11,6 @@ export default function Search({ value, setValue }) {
         placeholder="Search for emoji..."
         defaultValue={value}
         onChange={(e) => setValue(e.target.value)}
-        onFocus={(e) => (e.target.value = '')}
         className="w-full rounded-md border border-gray-200 p-2.5 pe-10 text-gray-400 shadow-sm outline-none duration-300 ease-out placeholder:text-gray-400 focus:border-yellow-400 sm:text-sm"
       />
 
