@@ -16,12 +16,12 @@ export default function useSearchEmoji(value) {
 
     axios({
       method: 'GET',
-      url: 'https://emoji-api.com/emojis',
-      params: { search: value, access_key: import.meta.env.VITE_EMOJI_API_KEY },
+      url: 'https://emojilicious-backend.vercel.app/api',
+      params: { search: value },
       signal: controller.signal
     })
       .then((response) => {
-        setEmojis(response.data);
+        setEmojis(response.data.emojis);
         setFoundAny(response.data.length > 0);
         setError(false);
         setLoading(false);
