@@ -1,9 +1,14 @@
 import { useEffect, useState } from 'react';
 
+const usersPreference =
+  localStorage.theme ??
+  (!('theme' in localStorage) &&
+  window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light');
+
 export default function useTheme() {
-  const [currentTheme, setCurrentTheme] = useState(
-    localStorage.theme ?? 'light',
-  );
+  const [currentTheme, setCurrentTheme] = useState(usersPreference);
 
   useEffect(() => {
     if (currentTheme === 'dark') {
