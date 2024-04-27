@@ -8,12 +8,12 @@ export default function Switch() {
       <input
         type="checkbox"
         className="sr-only peer"
-        checked={currentTheme === "dark"}
+        checked={currentTheme === 'dark'}
         onChange={() => {
-          if (currentTheme === "dark") {
-            setCurrentTheme("light");
+          if (currentTheme === 'dark') {
+            setCurrentTheme('light');
           } else {
-            setCurrentTheme("dark");
+            setCurrentTheme('dark');
           }
         }}
       />
