@@ -16,7 +16,7 @@ export default function useSearchEmoji(value) {
 
     axios({
       method: 'GET',
-      url: 'https://emojilicious-backend.vercel.app/api',
+      url: 'https://beniusis.vercel.app/api/emojis',
       params: { search: value },
       signal: controller.signal
     })
@@ -31,7 +31,7 @@ export default function useSearchEmoji(value) {
       });
 
     return () => controller.abort();
-  }, [value]);
+  }, [value, setLoading, setError, setFoundAny, setEmojis]);
 
   return { loading, error, foundAny, emojis };
 }
