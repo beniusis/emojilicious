@@ -1,4 +1,6 @@
-export default function Emoji({ value }) {
+import PropTypes from 'prop-types';
+
+export const Emoji = ({ value }) => {
   const copyToClipboard = (e) => {
     e.preventDefault();
     navigator.clipboard.writeText(e.target.textContent);
@@ -15,4 +17,8 @@ export default function Emoji({ value }) {
       </div>
     </div>
   );
-}
+};
+
+Emoji.propTypes = {
+  value: PropTypes.string.isRequired
+};

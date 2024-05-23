@@ -1,6 +1,6 @@
-import Switch from './Switch';
+import { Switch } from './Switch';
 
-export default function Header() {
+export const Header = () => {
   return (
     <header className="flex flex-col items-center justify-center gap-8">
       <Switch />
@@ -9,4 +9,4 @@ export default function Header() {
       </h2>
     </header>
   );
-}
+};

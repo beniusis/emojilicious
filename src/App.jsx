@@ -1,9 +1,6 @@
-import Header from './components/Header';
-import Search from './components/Search';
-import Loading from './components/Loading';
-import Emojis from './components/Emojis';
-import useSearchEmoji from './hooks/useSearchEmoji';
+import { Emojis, Header, Loading, Search } from './components';
 import { useState } from 'react';
+import { useSearchEmoji } from './hooks';
 
 export default function App() {
   const [searchValue, setSearchValue] = useState('');

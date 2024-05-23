@@ -1,4 +1,6 @@
-export default function Search({ value, setValue }) {
+import PropTypes from 'prop-types';
+
+export const Search = ({ value, setValue }) => {
   return (
     <div className="relative">
       <label htmlFor="search" className="sr-only">
@@ -34,4 +36,9 @@ export default function Search({ value, setValue }) {
       </span>
     </div>
   );
-}
+};
+
+Search.propTypes = {
+  value: PropTypes.string.isRequired,
+  setValue: PropTypes.func.isRequired
+};

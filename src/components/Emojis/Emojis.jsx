@@ -1,7 +1,8 @@
-import Emoji from './Emoji';
+import { Emoji } from './Emoji';
 import { find } from 'node-emoji';
+import PropTypes from 'prop-types';
 
-export default function Emojis({ emojis }) {
+export const Emojis = ({ emojis }) => {
   return (
     <div className="flex min-w-[280px] flex-row flex-wrap items-center justify-center gap-10 px-10 py-5">
       {emojis.map((emoji) => {
@@ -11,4 +12,8 @@ export default function Emojis({ emojis }) {
       })}
     </div>
   );
-}
+};
+
+Emojis.propTypes = {
+  emojis: PropTypes.array.isRequired
+};

@@ -6,7 +6,7 @@ const usersPreference =
     ? 'dark'
     : 'light');
 
-export default function useTheme() {
+export const useTheme = () => {
   const [currentTheme, setCurrentTheme] = useState(usersPreference);
 
   useEffect(() => {
@@ -20,4 +20,4 @@ export default function useTheme() {
   }, [currentTheme]);
 
   return { currentTheme, setCurrentTheme };
-}
+};

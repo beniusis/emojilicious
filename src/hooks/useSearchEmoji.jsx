@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-export default function useSearchEmoji(value) {
+export const useSearchEmoji = (value) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [foundAny, setFoundAny] = useState(false);
@@ -34,4 +34,4 @@ export default function useSearchEmoji(value) {
   }, [value, setLoading, setError, setFoundAny, setEmojis]);
 
   return { loading, error, foundAny, emojis };
-}
+};
