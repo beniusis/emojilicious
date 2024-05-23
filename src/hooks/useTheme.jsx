@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 
 const usersPreference =
   localStorage.theme ??
-  (!('theme' in localStorage) &&
-  window.matchMedia('(prefers-color-scheme: dark)').matches
+  (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light');
 
