@@ -18,9 +18,9 @@ export const Emoji = ({ value }) => {
   };
 
   return (
-    <div className="flex h-[64px] w-[64px] select-none items-center justify-center rounded-lg text-3xl shadow-lg duration-100 ease-out hover:scale-110 hover:bg-gray-100 bg-white dark:hover:bg-yellow-200 group">
+    <div className="group relative flex size-10 items-center justify-center">
       <button
-        className="duration-100 ease-out max-h-fit max-w-fit hover:cursor-pointer active:scale-90 disabled:hover:cursor-default disabled:active:scale-100"
+        className="max-h-fit max-w-fit text-4xl duration-100 ease-out hover:scale-105 hover:cursor-pointer active:scale-95 disabled:scale-100 disabled:hover:cursor-default"
         title="Press to copy to clipboard"
         onClick={copyToClipboard}
         disabled={actionText === COPIED_TEXT}
@@ -28,7 +28,7 @@ export const Emoji = ({ value }) => {
         {value}
       </button>
 
-      <div className="bg-white shadow-xl dark:shadow-none p-2 rounded-md group-hover:block hidden absolute -top-2 -translate-y-full left-1/2 -translate-x-1/2 text-xs text-center w-32 after:content-[''] after:absolute after:-bottom-[6px] after:left-1/2 after:w-4 after:h-4 after:bg-white after:-translate-x-1/2 polygon">
+      <div className="polygon absolute -top-3 left-1/2 hidden w-fit -translate-x-1/2 -translate-y-full text-nowrap rounded-md bg-yellow-200 p-2 text-center text-xs after:absolute after:bottom-[-6px] after:left-1/2 after:size-4 after:-translate-x-1/2 after:bg-yellow-200 after:content-[''] group-hover:block">
         {actionText}
       </div>
     </div>
