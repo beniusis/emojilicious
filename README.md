@@ -33,7 +33,6 @@
 
 ![](./screenshots/main.png)
 ![](./screenshots/search.png)
-![](./screenshots/dark.png)
 
 ## Setup the Development Environment
 
