@@ -13,11 +13,11 @@ export const Search = ({ value, setValue }) => {
         placeholder="Search for emoji..."
         defaultValue={value}
         onChange={(e) => setValue(e.target.value)}
-        className="w-full rounded-md border border-gray-200 p-2.5 pe-10 text-gray-400 shadow-sm outline-none duration-300 ease-out placeholder:text-gray-400 focus:border-yellow-400 sm:text-sm"
+        className="w-full rounded-md bg-emoji-yellow p-2.5 pe-10 text-sm text-black outline-none transition-all duration-300 ease-out placeholder:text-black/70 focus:ring-2 focus:ring-emoji-yellow focus:ring-offset-2"
       />
 
       <span
-        className="pointer-events-none absolute inset-y-0 end-0 grid w-10 place-content-center text-gray-600"
+        className="pointer-events-none absolute inset-y-0 end-0 grid w-10 place-content-center text-black/70"
         aria-hidden
       >
         <svg

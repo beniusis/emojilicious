@@ -28,7 +28,7 @@ export const Emoji = ({ value }) => {
         {value}
       </button>
 
-      <div className="polygon absolute -top-3 left-1/2 hidden w-fit -translate-x-1/2 -translate-y-full text-nowrap rounded-md bg-yellow-200 p-2 text-center text-xs after:absolute after:bottom-[-6px] after:left-1/2 after:size-4 after:-translate-x-1/2 after:bg-yellow-200 after:content-[''] group-hover:block">
+      <div className="polygon absolute -top-3 left-1/2 hidden w-fit -translate-x-1/2 -translate-y-full text-nowrap rounded-md bg-emoji-yellow p-2 text-center text-xs after:absolute after:bottom-[-6px] after:left-1/2 after:size-4 after:-translate-x-1/2 after:bg-emoji-yellow after:content-[''] group-hover:block">
         {actionText}
       </div>
     </div>
