@@ -17,7 +17,7 @@ export const Search = ({ value, setValue }) => {
       />
 
       <span
-        className="absolute inset-y-0 grid w-10 text-gray-600 pointer-events-none end-0 place-content-center"
+        className="pointer-events-none absolute inset-y-0 end-0 grid w-10 place-content-center text-gray-600"
         aria-hidden
       >
         <svg
@@ -25,7 +25,7 @@ export const Search = ({ value, setValue }) => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-4 h-4"
+          className="size-4"
         >
           <path
             strokeLinecap="round"
