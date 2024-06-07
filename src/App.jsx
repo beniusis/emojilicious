@@ -7,7 +7,7 @@ export default function App() {
   const { loading, error, foundAny, emojis } = useSearchEmoji(searchValue);
 
   return (
-    <div className="flex flex-col items-center min-h-screen gap-10 py-10 duration-500 bg-white font-titillium-web dark:bg-zinc-900">
+    <div className="flex min-h-screen flex-col items-center gap-10 bg-yellow-50 py-10 duration-500">
       <Header />
       <Search value={searchValue} setValue={setSearchValue} />
       {loading && <Loading />}
