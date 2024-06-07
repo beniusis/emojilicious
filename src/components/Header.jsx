@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
-    <header className="relative -rotate-2 rounded-xl bg-emoji-yellow px-6 py-4 sm:px-8">
-      <h2 className="rotate-1 select-none text-4xl font-extrabold tracking-tight text-yellow-50 duration-500 ease-in-out sm:text-6xl">
+    <header className="relative -rotate-2 select-none rounded-xl bg-emoji-yellow px-6 py-4 sm:px-8">
+      <h2 className="rotate-1 text-4xl font-extrabold tracking-tight text-yellow-50 duration-500 ease-in-out sm:text-6xl">
         emojilicious
       </h2>
 
