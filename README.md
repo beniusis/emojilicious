@@ -17,8 +17,7 @@
 ### Features
 
 - **Search**: users are able to search for emojis by name.
-- **Copy**: users are able to copy emojis to clipboard by pressing on them.
-- **Dark Mode**: users are able to switch between light/dark theme modes.
+- **Copy To Clipboard**: users are able to copy emojis to clipboard by pressing on them.
 - **Responsive Design**: ensuring a seamless user experience across all devices.
 
 ### Technologies and Tools
